@@ -9,6 +9,7 @@
     <title>4 Cars | Aluguel de carros</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <main>
       <header>
         <div id="container-logo">
@@ -19,8 +20,8 @@
             <p class="menu-item">Blog</p>
             <p class="menu-item">Quem somos</p>
           </nav>
-          <button class="header-button">Contato</button>
-          <button class="header-button">Entrar</button>
+          <button class="header-button" onclick="scrollToForm()">Contato</a></button>
+          <button class="header-button" onclick="scrollToForm()">Entrar</a></button>
         </div>
       </header>
       <div class="social-media">
@@ -40,7 +41,7 @@
               taxas do mercado, sem juros e sem entrada, para que você começe a
               gerar renda o mais rápido possível
             </p>
-            <button>Quero alugar um carro agora!</button>
+            <button onclick="scrollToForm()">Quero alugar um carro agora!</button>
           </div>
           <div class="image-column">
             <img src="./assets/pexels-antoni-shkraba-7144214.jpg" />
@@ -84,7 +85,7 @@
               </figcaption>
             </figure>
           </div>
-          <button>Falar com um consultor</button>
+          <button onclick="scrollToForm()">Falar com um consultor</button>
         </section>
         <section id="box-cars-models">
           <h2>O carro que combina com você</h2>
@@ -94,18 +95,16 @@
               <img
                 src="./assets/Mobi.png"
                 alt="Linha popular"
-                onclick="changeCar(1, 'basic')"
               />
-              <button class="see-more-button">Ver mais</button>
+              <button class="see-more-button" onclick="scrollToForm()">Ver mais</button>
             </div>
             <div class="column">
               <h3>Linha Premium</h3>
               <img
                 src="./assets/Toyota Corola 2.0 Altis.png"
                 alt="Linha premium"
-                onclick="changeCar(1, 'premium')"
               />
-              <button class="see-more-button">Ver mais</button>
+              <button class="see-more-button" onclick="scrollToForm()">Ver mais</button>
             </div>
           </div>
         </section>
@@ -132,7 +131,7 @@
               <h3>
                 Alugue com a gente e aproveite as nossas principais vantagens
               </h3>
-              <button>Fale com um consultor</button>
+              <button onclick="scrollToForm()">Fale com um consultor</button>
             </div>
           </div>
           <div class="column right-column">
@@ -192,15 +191,15 @@
               <input type="text" id="email" name="email" placeholder="Email" />
               <input
                 type="password"
-                id="senha"
-                name="senha"
+                id="password"
+                name="password"
                 placeholder="Senha"
               />
             </div>
             <div class="forgot-password">
               <a href="recuperar-senha.html">Esqueci minha senha</a>
             </div>
-            <button>Entrar</button>
+            <button  onclick="checkInput()">Entrar</button>
             <h3>Ou inicie sessão com:</h3>
             <div class="social-login">
               <div class="google">
