@@ -41,6 +41,11 @@ header {
 
 .menu-item {
   margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-decoration: underline black;
 }
 
 .header-button {
@@ -48,10 +53,15 @@ header {
   background-color: #ff5c5b;
   color: #ffffff;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px 18px;
   border-radius: 12px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.header-button:hover{
+  background-color: #f44f4f;
 }
 
 .header-buttons {
@@ -67,6 +77,7 @@ header {
   margin-left: 10px;
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 /* section 01 - first section*/
