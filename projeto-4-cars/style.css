@@ -60,8 +60,8 @@ header {
   cursor: pointer;
 }
 
-.header-button:hover{
-  background-color: #f44f4f;
+.header-button:hover {
+  background-color: #000000;
 }
 
 .header-buttons {
@@ -130,7 +130,7 @@ header {
 }
 
 #first-section > div > button:hover {
-  background-color: #f44f4f;
+  background-color: #000000;
 }
 
 /* section 02 - section two*/
@@ -167,8 +167,10 @@ figure {
 }
 
 figure img {
-  width: 12vw;
-  height: 12vw;
+  width: 50%;
+  height: 50%;
+  max-width: 18vw;
+  max-height: 18vw;
 }
 
 figure h3 {
@@ -197,7 +199,7 @@ figure figcaption {
 }
 
 #section-two > button:hover {
-  background-color: #f44f4f;
+  background-color: #000000;
 }
 
 /* section 03 - box-car-models */
@@ -207,7 +209,7 @@ figure figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -222,9 +224,9 @@ figure figcaption {
 #box-cars-models .columns {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 #box-cars-models .column {
@@ -232,23 +234,27 @@ figure figcaption {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  margin: 0 10px;
 }
 
-#box-cars-models .column\ h3 {
+#box-cars-models .column h3 {
   text-align: center;
-  margin-top: 2%;
+  margin-top: 1%;
   font-weight: bold;
   font-size: 25px;
 }
 
 #box-cars-models img {
-  max-width: 80%;
-  max-height: 20vw;
+  width: 70%;
+  height: 280px;
+  object-fit: contain;
+  max-height: 100%;
 }
 
 #box-cars-models .see-more-button {
   display: block;
-  margin-top: 10px;
+  margin: 10px;
   width: 40%;
   font-size: 18px;
   font-weight: bold;
@@ -262,7 +268,8 @@ figure figcaption {
 }
 
 #box-cars-models .see-more-button:hover {
-  background-color: #f44f4f;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* section 04 - section four */
@@ -347,7 +354,7 @@ figure figcaption {
 }
 
 #why-choose > button:hover {
-  background-color: #f44f4f;
+  background-color: #000000;
 }
 
 .cards-benefits {
@@ -441,7 +448,7 @@ input {
 }
 
 #section-form button:hover {
-  background-color: #f44f4f;
+  background-color: #000000;
 }
 
 .forgot-password {
@@ -535,5 +542,3 @@ footer nav p:hover {
   width: 100%;
   margin-top: 20px;
 }
-
-
