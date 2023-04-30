@@ -100,7 +100,7 @@ header {
 
 .image-column img {
   width: 100%;
-  height: auto%;
+  height: auto;
   padding: 5% 0% 5%;
   border-radius: 10%;
 }
@@ -517,21 +517,24 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 20px;
 }
 
-footer nav {
+footer .footer-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer nav p {
+footer .footer-p {
   margin-right: 20px;
   white-space: nowrap;
 }
 
-footer nav p:hover {
+footer .footer-p:hover {
   text-decoration: underline;
   color: #ffffff;
   cursor: pointer;
@@ -541,4 +544,187 @@ footer nav p:hover {
   text-align: center;
   width: 100%;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  /* para iPhone 6/7/8 */
+
+  .menu-main {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-item {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-media {
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+  #first-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-column {
+    flex-basis: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .image-column {
+    flex-basis: 100%;
+    padding: 0 10px;
+  }
+
+  .image-column img {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  #first-section > div > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  #first-section > div > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  #first-section > div > button {
+    font-size: 16px;
+    border-radius: 30px;
+  }
+
+  #section-two h2 {
+    font-size: 24px;
+  }
+
+  .box-road {
+    width: 100%;
+  }
+
+  figure {
+    width: 50%;
+    height: auto;
+    padding: 5% 2%;
+  }
+
+  figure img {
+    width: 100%;
+    height: 100%;
+  }
+
+  figure h3 {
+    font-size: 20px;
+  }
+
+  #section-two > button {
+    font-size: 18px;
+    padding: 10px 24px;
+  }
+
+  #box-cars-models .columns {
+    flex-direction: column;
+  }
+
+  #box-cars-models .column {
+    margin: 10px 0;
+  }
+
+  #box-cars-models img {
+    width: 100%;
+    height: auto;
+  }
+
+  #box-cars-models .see-more-button {
+    width: 50%;
+  }
+
+  #section-four {
+    flex-direction: column;
+  }
+
+  #section-four h2 {
+    font-size: 25px;
+    margin-bottom: 10%;
+  }
+
+  .txt-column {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .img-column {
+    flex-basis: 100%;
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  #section-five {
+    flex-direction: column;
+  }
+
+  #why-choose h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #why-choose > button {
+    font-size: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .left-column {
+    flex-basis: 100%;
+    padding: 0 20px;
+    max-width: 600px;
+  }
+
+  .right-column {
+    flex-basis: 100%;
+    padding: 2%;
+    max-width: 600px;
+  }
+
+  .card-img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  body {
+    margin-bottom: 5%;
+  }
+
+  footer .footer-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-p {
+    margin: 10px 0;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
 }
